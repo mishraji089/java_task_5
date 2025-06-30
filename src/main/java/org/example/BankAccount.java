@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-// Transaction class to store transaction details
+
 class Transaction {
     private String type;
     private double amount;
@@ -24,7 +24,7 @@ class Transaction {
     }
 }
 
-// Account class to manage bank account operations
+
 class Account {
     private String accountNumber;
     private double balance;
@@ -84,7 +84,7 @@ class Account {
     }
 }
 
-// Main class to simulate bank operations with user input
+
 public class BankAccount {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -105,11 +105,11 @@ public class BankAccount {
             }
         }
 
-        // Create a new account
+        
         Account account = new Account("1234567890", initialBalance);
         System.out.println("Account created with Account Number: " + account.getAccountNumber());
 
-        // Interactive menu for transactions
+        
         while (true) {
             System.out.println("\nChoose an option:");
             System.out.println("1. Deposit");
@@ -151,7 +151,7 @@ public class BankAccount {
                 System.out.println("Invalid choice. Please select 1, 2, 3, or 4.");
             }
 
-            // Display current balance
+            
             System.out.printf("Current Balance: $%.2f%n", account.getBalance());
         }
 
